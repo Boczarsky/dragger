@@ -22,6 +22,9 @@ class Dragger {
     addHandle = (element) => {
         element.addEventListener('mousedown', this.startDragging);
     }
+    addMultipleHandles = (elements) => {
+        elements.forEach(this.addHandle);
+    }
     startDragging = (event) => {
         this.offsetX = event.offsetX;
         this.offsetY = event.offsetY;
