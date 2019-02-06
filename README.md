@@ -1,5 +1,6 @@
 # dragger
-Makes element draggable by handle
+Makes element draggable by handle<br>
+Example html element:
 ```HTML
 <div class="draggable">
   <div class="handle"></div>
@@ -8,6 +9,7 @@ Makes element draggable by handle
   </div>
 </div>
 ```
+\*draggable should have 'position: absolute'<br>
 To make element draggable you must create instance of Dragger class<br>
 ```ES6
 const dragger = new Dragger()
